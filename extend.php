@@ -1,19 +1,19 @@
 <?php
 
 /*
- * This file is part of ianm/oauth-amazon.
+ * This file is part of nodeloc/oauth-telegram.
  *
- * Copyright (c) 2021 IanM.
+ * Copyright (c) 2021 Nodeloc.
  *
  *  For the full copyright and license information, please view the LICENSE.md
  *  file that was distributed with this source code.
  */
 
-namespace IanM\OAuthAmazon;
+namespace Nodeloc\OAuthTelegram;
 
 use Flarum\Extend;
 use FoF\OAuth\Extend as OAuthExtend;
-use IanM\OAuthAmazon\Providers\Amazon;
+use Nodeloc\OAuthTelegram\Providers\Telegram;
 
 return [
     (new Extend\Frontend('forum'))
@@ -24,5 +24,5 @@ return [
 
     new Extend\Locales(__DIR__.'/locale'),
 
-    (new OAuthExtend\RegisterProvider(Amazon::class)),
+    (new OAuthExtend\RegisterProvider(Telegram::class)),
 ];

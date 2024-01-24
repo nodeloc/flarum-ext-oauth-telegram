@@ -1,5 +1,5 @@
 {
-  "name": "@ianm/oauth-amazon",
+  "name": "@nodeloc/oauth-telegram",
   "version": "0.0.0",
   "private": true,
   "prettier": "@flarum/prettier-config",
